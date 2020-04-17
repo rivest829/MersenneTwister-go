@@ -29,7 +29,7 @@ func (mt *MersenneTwister) generate() {
 	}
 }
 
-func (mt *MersenneTwister) rand() int {
+func (mt *MersenneTwister) Rand() int {
 	if mt.index == 0 {
 		mt.generate()
 	}
